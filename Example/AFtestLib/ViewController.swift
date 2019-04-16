@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import AFTestLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        performNetworkingRequest()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func performNetworkingRequest() {
+        let networkRequest = NetworkRequest(withParam: "")
+        print("Starting network Request \n ------------- ")
+        networkRequest.test()
+        networkRequest.performRequest { (response) in
+            print(response)
+        }
     }
-
 }
 

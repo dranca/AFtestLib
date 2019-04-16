@@ -13,7 +13,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		6D6B2C4BAC9E9D70F42F4DD8 /* Pods_AFtestLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259009061658635B4CDE4813 /* Pods_AFtestLib_Tests.framework */; };
 		6E269B2CB3B9B88DFCCF85E3 /* Pods_AFtestLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CFC3CA691E4FE4425D1619 /* Pods_AFtestLib_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,9 +42,7 @@
 		9C65E572EE5CEFE4A4A09E1D /* AFtestLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AFtestLib.podspec; path = ../AFtestLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB10F8912A8A0CA99FDEF9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A2FCCBCD1A2CAF22761181EC /* Pods-AFtestLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFtestLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFtestLib_Example/Pods-AFtestLib_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BCBDA8BF57A382FC637A7119 /* Pods-AFtestLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFtestLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFtestLib_Tests/Pods-AFtestLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0CFC3CA691E4FE4425D1619 /* Pods_AFtestLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFtestLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEFCAB04667F1C78FA028A39 /* Pods-AFtestLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFtestLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFtestLib_Tests/Pods-AFtestLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DC33C45EDDD9CD86E49C19C0 /* Pods-AFtestLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFtestLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFtestLib_Example/Pods-AFtestLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D6B2C4BAC9E9D70F42F4DD8 /* Pods_AFtestLib_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +149,6 @@
 			children = (
 				DC33C45EDDD9CD86E49C19C0 /* Pods-AFtestLib_Example.debug.xcconfig */,
 				A2FCCBCD1A2CAF22761181EC /* Pods-AFtestLib_Example.release.xcconfig */,
-				BCBDA8BF57A382FC637A7119 /* Pods-AFtestLib_Tests.debug.xcconfig */,
-				CEFCAB04667F1C78FA028A39 /* Pods-AFtestLib_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -170,7 +164,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				4F5C7822FDE1CD12C5DA599F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,11 +178,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AFtestLib_Tests" */;
 			buildPhases = (
-				790E4B009C4DF133F97C7552 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				8D6851166C75C925D5F4263C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,42 +253,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4F5C7822FDE1CD12C5DA599F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AFtestLib_Example/Pods-AFtestLib_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFtestLib/AFtestLib.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFtestLib.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFtestLib_Example/Pods-AFtestLib_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		790E4B009C4DF133F97C7552 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AFtestLib_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		835766E529FFA04321E120DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,24 +269,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D6851166C75C925D5F4263C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AFtestLib_Tests/Pods-AFtestLib_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFtestLib_Tests/Pods-AFtestLib_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -515,7 +452,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCBDA8BF57A382FC637A7119 /* Pods-AFtestLib_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -537,7 +473,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEFCAB04667F1C78FA028A39 /* Pods-AFtestLib_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
