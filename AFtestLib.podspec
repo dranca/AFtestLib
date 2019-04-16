@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AFtestLib'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'Small lib to test the capablity to perform a request, save to file and connect to bluetooth'
 
 # This description is used to generate tags and improve search results.
