@@ -11,11 +11,15 @@ import AFtestLib
 
 class ViewController: UIViewController {
 
+    var ble: BluetoothLowEnergy!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        performNetworkingRequest()
-        performWriteToSandbox(text: "Random text")
+//        performNetworkingRequest()
+//        performWriteToSandbox(text: "Random text")
+        testBLE()
+        
     }
     
     func performNetworkingRequest() {
@@ -40,6 +44,11 @@ class ViewController: UIViewController {
         } catch {
             print("Error while writing to disk \(error)")
         }
+        
+    }
+    
+    func testBLE() {
+        ble = BluetoothLowEnergy()
         
     }
 }

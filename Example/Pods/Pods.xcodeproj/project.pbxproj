@@ -13,6 +13,7 @@
 		4CB6BB412265BD130030B308 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6BB3C2265BD130030B308 /* APIRequest.swift */; };
 		4CB6BB422265BD130030B308 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6BB3D2265BD130030B308 /* NetworkRequest.swift */; };
 		4CB6BB432265BD130030B308 /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6BB402265BD130030B308 /* Sandbox.swift */; };
+		4CB6BB452265C5BC0030B308 /* BluetoothLowEnergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6BB442265C5BC0030B308 /* BluetoothLowEnergy.swift */; };
 		4EE11160740DAD400548289522DEC140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		6251960E4CCBA5B83C2DA41FE4F67BE2 /* AFtestLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5988F7DA88385B28268C4786C730F /* AFtestLib-dummy.m */; };
 		6ABE1764AEF0319819D469A561E060D9 /* Pods-AFtestLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16602E7829B3A827AAE6874AC84A24FE /* Pods-AFtestLib_Example-dummy.m */; };
@@ -41,6 +42,7 @@
 		4CB6BB3D2265BD130030B308 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		4CB6BB3E2265BD130030B308 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		4CB6BB402265BD130030B308 /* Sandbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sandbox.swift; sourceTree = "<group>"; };
+		4CB6BB442265C5BC0030B308 /* BluetoothLowEnergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothLowEnergy.swift; sourceTree = "<group>"; };
 		4FA5988F7DA88385B28268C4786C730F /* AFtestLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFtestLib-dummy.m"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5F00CAB841996F9882799CF85F1480EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				4CB6BB3B2265BD130030B308 /* Networking */,
 				4CB6BB3F2265BD130030B308 /* Sandbox */,
+				4CB6BB462265C5CA0030B308 /* BLE */,
 			);
 			name = Classes;
 			path = AFtestLib/Classes;
@@ -144,6 +147,14 @@
 				4CB6BB402265BD130030B308 /* Sandbox.swift */,
 			);
 			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		4CB6BB462265C5CA0030B308 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				4CB6BB442265C5BC0030B308 /* BluetoothLowEnergy.swift */,
+			);
+			path = BLE;
 			sourceTree = "<group>";
 		};
 		59948ADB175F7E4A1D176A4953D9B1AE /* Targets Support Files */ = {
@@ -302,6 +313,7 @@
 			files = (
 				4CB6BB412265BD130030B308 /* APIRequest.swift in Sources */,
 				4CB6BB422265BD130030B308 /* NetworkRequest.swift in Sources */,
+				4CB6BB452265C5BC0030B308 /* BluetoothLowEnergy.swift in Sources */,
 				6251960E4CCBA5B83C2DA41FE4F67BE2 /* AFtestLib-dummy.m in Sources */,
 				4CB6BB432265BD130030B308 /* Sandbox.swift in Sources */,
 			);
