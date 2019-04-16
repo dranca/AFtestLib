@@ -9,7 +9,7 @@ import Foundation
 
 public class NetworkRequest {
     public init (withParam: String) {}
-    public func performRequest(completion: @escaping (String) -> ()) {
+    public func performRequest(success: @escaping ([Post]) -> (), failure: @escaping((String) -> ())) {
         let request = APIRequest(method: .get, path: "posts")
         
         APIClient().perform(request) { (result) in
@@ -17,12 +17,12 @@ public class NetworkRequest {
             case .success(let response):
                 if let response = try? response.decode(to: [Post].self) {
                     let posts = response.body
-                    completion("Received posts: \(posts.first?.title ?? "")")
+                    success(posts)
                 } else {
-                    completion("Failed to decode response")
+                    failure("Failed to decode response")
                 }
             case .failure:
-                completion("Error perform network request")
+                failure("🚨💣💥Error perform network request")
             }
         }
     }

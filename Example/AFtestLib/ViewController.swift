@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AFTestLib
+import AFtestLib
 
 class ViewController: UIViewController {
 
@@ -20,9 +20,14 @@ class ViewController: UIViewController {
     func performNetworkingRequest() {
         let networkRequest = NetworkRequest(withParam: "")
         print("Starting network Request \n ------------- ")
-        networkRequest.test()
-        networkRequest.performRequest { (response) in
+        networkRequest.performRequest(success: { (posts) in
+            var response = ""
+            for post in posts {
+                response += "\(post.id) - "
+            }
             print(response)
+        }) { (errorMessage) in
+            print(errorMessage)
         }
     }
 }
