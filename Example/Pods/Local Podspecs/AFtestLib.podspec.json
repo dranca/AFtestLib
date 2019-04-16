@@ -1,0 +1,22 @@
+{
+  "name": "AFtestLib",
+  "version": "0.1.0",
+  "summary": "A short description of AFtestLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Alexandru Dranca/AFtestLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Alexandru Dranca": "alexandru.dranca@fortech.ro"
+  },
+  "source": {
+    "git": "https://github.com/Alexandru Dranca/AFtestLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AFtestLib/Classes/**/*"
+}

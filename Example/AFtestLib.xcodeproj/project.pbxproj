@@ -39,9 +39,9 @@
 		607FACE51AFB9204008FA782 /* AFtestLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFtestLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		86431AD374B04625EBADC2C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9C65E572EE5CEFE4A4A09E1D /* AFtestLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AFtestLib.podspec; path = ../AFtestLib.podspec; sourceTree = "<group>"; };
-		9DB10F8912A8A0CA99FDEF9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		86431AD374B04625EBADC2C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9C65E572EE5CEFE4A4A09E1D /* AFtestLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AFtestLib.podspec; path = ../AFtestLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB10F8912A8A0CA99FDEF9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A2FCCBCD1A2CAF22761181EC /* Pods-AFtestLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFtestLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFtestLib_Example/Pods-AFtestLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BCBDA8BF57A382FC637A7119 /* Pods-AFtestLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFtestLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFtestLib_Tests/Pods-AFtestLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0CFC3CA691E4FE4425D1619 /* Pods_AFtestLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFtestLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
