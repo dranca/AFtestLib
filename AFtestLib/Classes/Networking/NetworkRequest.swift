@@ -8,7 +8,9 @@
 import Foundation
 
 public class NetworkRequest {
-    public init (withParam: String) {}
+    
+    public init () {}
+    
     public func performRequest(success: @escaping ([Post]) -> (), failure: @escaping((String) -> ())) {
         let request = APIRequest(method: .get, path: "posts")
         

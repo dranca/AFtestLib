@@ -15,10 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         performNetworkingRequest()
+        performWriteToSandbox(text: "Random text")
     }
     
     func performNetworkingRequest() {
-        let networkRequest = NetworkRequest(withParam: "")
+        let networkRequest = NetworkRequest()
         print("Starting network Request \n ------------- ")
         networkRequest.performRequest(success: { (posts) in
             var response = ""
@@ -29,6 +30,17 @@ class ViewController: UIViewController {
         }) { (errorMessage) in
             print(errorMessage)
         }
+    }
+    
+    func performWriteToSandbox(text: String) {
+        let sandbox = Sandbox()
+        do {
+            try sandbox.write(text: text)
+            print("Successfully wrote \(text) to disk.")
+        } catch {
+            print("Error while writing to disk \(error)")
+        }
+        
     }
 }
 
