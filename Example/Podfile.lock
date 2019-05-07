@@ -1,5 +1,5 @@
 PODS:
-  - AFtestLib (1.0.3)
+  - AFtestLib (1.1.2)
 
 DEPENDENCIES:
   - AFtestLib (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFtestLib: 30fbaaa247aca8f5b7ab530ee145ab95e635a6f4
+  AFtestLib: 696d8fecd97aeba16838b5e4e9c0782c8bb96feb
 
 PODFILE CHECKSUM: bd25057a0684c7b30e526384c17697cba0010e0a
 

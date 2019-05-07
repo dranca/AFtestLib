@@ -18,7 +18,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 //        performNetworkingRequest()
 //        performWriteToSandbox(text: "Random text")
-        testBLE()
+//        testBLE()
+        testLib()
         
     }
     
@@ -49,7 +50,11 @@ class ViewController: UIViewController {
     
     func testBLE() {
         ble = BluetoothLowEnergy()
-        
+    }
+    
+    func testLib() {
+//        let objcW = OBJCWrapper()
+//        objcW.test()
     }
 }
 
