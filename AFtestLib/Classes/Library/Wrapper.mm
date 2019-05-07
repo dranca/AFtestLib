@@ -14,6 +14,5 @@ extern "C" const char* test_get(const char* input) {
 }
 
 extern "C" int test_post() {
-//    TryConnect connect = TryConnect();
     return test_call();
 }
