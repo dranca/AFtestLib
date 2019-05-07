@@ -486,9 +486,9 @@
 				MODULEMAP_FILE = "Target Support Files/AFtestLib/AFtestLib.modulemap";
 				OTHER_LDFLAGS = (
 					"-L../../AFtestLib/Classes/Imports/Binaries",
-					"-lQt5Core",
-					"-lqtpcre2",
-					"-lz",
+					"-l\"Qt5Core\"",
+					"-l\"qtpcre2\"",
+					"-l\"z\"",
 				);
 				PRODUCT_MODULE_NAME = AFtestLib;
 				PRODUCT_NAME = AFtestLib;
@@ -528,9 +528,9 @@
 				MODULEMAP_FILE = "Target Support Files/AFtestLib/AFtestLib.modulemap";
 				OTHER_LDFLAGS = (
 					"-L../../AFtestLib/Classes/Imports/Binaries",
-					"-lQt5Core",
-					"-lqtpcre2",
-					"-lz",
+					"-l\"Qt5Core\"",
+					"-l\"qtpcre2\"",
+					"-l\"z\"",
 				);
 				PRODUCT_MODULE_NAME = AFtestLib;
 				PRODUCT_NAME = AFtestLib;
