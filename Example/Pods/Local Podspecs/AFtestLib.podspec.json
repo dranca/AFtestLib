@@ -29,5 +29,9 @@
     "SystemConfiguration",
     "CoreFoundation",
     "Foundation"
-  ]
+  ],
+  "vendored_libraries": [
+    "../../AFtestLib/NIIP/Libraries/libCPP_LIB.a"
+  ],
+  "libraries": "CPP_LIB"
 }
