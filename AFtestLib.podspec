@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation', 'Foundation'
   s.library = 'CPP_LIB'
   s.exclude_files = '../../AFtestLib/Ignore/**'
-  s.private_header_files = '../../AFtestLib/Ignore/Headers'
+  s.private_header_files = '../../AFtestLib/Ignore/Headers/**'
 
 end
