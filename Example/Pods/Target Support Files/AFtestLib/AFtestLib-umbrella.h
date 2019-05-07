@@ -11,7 +11,7 @@
 #endif
 
 //#import "connect_sdk.h"
-//#import "OBJCWrapper.h"
+#import "OBJCWrapper.h"
 //#import "Wrapper.h"
 
 FOUNDATION_EXPORT double AFtestLibVersionNumber;

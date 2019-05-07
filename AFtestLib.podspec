@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AFtestLib'
-  s.version          = '1.1.2'
-  s.summary          = 'Small lib to test the capablity to perform a request, save to file and connect to bluetooth'
+  s.version          = '1.2.0'
+  s.summary          = 'Small lib to test the capablity to perform a request, save to file and connect to bluetooth. It now displays the capability of importing a Qt library.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

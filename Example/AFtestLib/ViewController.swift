@@ -53,8 +53,8 @@ class ViewController: UIViewController {
     }
     
     func testLib() {
-//        let objcW = OBJCWrapper()
-//        objcW.test()
+        let objcW = OBJCWrapper()
+        objcW.test()
     }
 }
 

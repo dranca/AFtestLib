@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		105F095DD97978011317ABF6C684AEC7 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E646738BA719BDDD8594A599836E3DE4 /* APIRequest.swift */; };
 		1606577E9BB5E1761DFAA708B198087D /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B56563F4A13AAEEA5675D6CEB1B55A /* Sandbox.swift */; };
-		1992B41427E788FA9431B706F537D8FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		2C13EC4782333FFD065B3BD75F5C3794 /* Pods-AFtestLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2225FA276E55AB145C650FB07FA4A5 /* Pods-AFtestLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4543BF47568329DB11726BCE8F94F6EC /* AFtestLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 370462BBDAF941F156BE91D5FC09220A /* AFtestLib-dummy.m */; };
 		4C1F333B228179CD00867BDD /* libCPP_LIB in Frameworks */ = {isa = PBXBuildFile; fileRef = CB52AF68BF6A7315B63756CAFCB86FB8 /* libCPP_LIB */; };
-		4C1FF9DA228175D500867BDD /* connect_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = A97B7C556C02376CFFFE226AC966B8B0 /* connect_sdk.h */; };
-		4C1FF9DC228175D500867BDD /* OBJCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5A08F0428513667E1FC058572F4CA0 /* OBJCWrapper.h */; };
+		4C1F334D228186E300867BDD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F334C228186DB00867BDD /* CoreFoundation.framework */; };
+		4C1F334E228186E300867BDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F334B228186DB00867BDD /* Foundation.framework */; };
+		4C1F33552281870200867BDD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F3353228186F900867BDD /* SystemConfiguration.framework */; };
+		4C1F33562281870600867BDD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F3354228186F900867BDD /* MobileCoreServices.framework */; };
+		4C1F33582281888F00867BDD /* SwiftWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F33572281888F00867BDD /* SwiftWrapper.swift */; };
+		4C1FF9DA228175D500867BDD /* connect_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = A97B7C556C02376CFFFE226AC966B8B0 /* connect_sdk.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4C1FF9DC228175D500867BDD /* OBJCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5A08F0428513667E1FC058572F4CA0 /* OBJCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C1FF9DD228175D500867BDD /* OBJCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 990B6B3235F58200C7904D841C21FD64 /* OBJCWrapper.m */; };
-		4C1FF9DE228175D500867BDD /* Wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 99B2E038C93C8F9046583D5B030380B2 /* Wrapper.h */; };
+		4C1FF9DE228175D500867BDD /* Wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 99B2E038C93C8F9046583D5B030380B2 /* Wrapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4C1FF9DF228175D500867BDD /* Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = B999826EFEC33D744451C285B6EBAA2F /* Wrapper.mm */; };
 		697FDFCD3C879685F53F82B3D53301A3 /* BluetoothLowEnergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5B3D47F83CC8F6087CEC1F2EE5E5F /* BluetoothLowEnergy.swift */; };
 		6ABE1764AEF0319819D469A561E060D9 /* Pods-AFtestLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16602E7829B3A827AAE6874AC84A24FE /* Pods-AFtestLib_Example-dummy.m */; };
@@ -47,8 +51,15 @@
 		3748D41AF25F91C878F3982A943A4120 /* Pods_AFtestLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFtestLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCAB1BEA191699863E9D6BA3BB1E89C /* Pods-AFtestLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AFtestLib_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4BD63A3BE23D6C1FBFC991906021BB10 /* AFtestLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFtestLib.xcconfig; sourceTree = "<group>"; };
+		4C1F33442281864100867BDD /* libQt5Core.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libQt5Core.la; sourceTree = "<group>"; };
+		4C1F33452281864100867BDD /* libQt5Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQt5Core.a; sourceTree = "<group>"; };
+		4C1F33462281864100867BDD /* libQt5Core.prl */ = {isa = PBXFileReference; lastKnownFileType = text; path = libQt5Core.prl; sourceTree = "<group>"; };
+		4C1F334B228186DB00867BDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C1F334C228186DB00867BDD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C1F3353228186F900867BDD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4C1F3354228186F900867BDD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		4C1F33572281888F00867BDD /* SwiftWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWrapper.swift; sourceTree = "<group>"; };
 		5991550969404B70E27327981D741809 /* NetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5EFC9F4CA38A3B22562CD7CD4BDB6B0E /* AFtestLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFtestLib-umbrella.h"; sourceTree = "<group>"; };
 		6E270B5AAA2F24D57CBD36094FE61BE0 /* Pods-AFtestLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AFtestLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73E82D43957DA4328686C47E07D2EE78 /* Pods-AFtestLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AFtestLib_Example.modulemap"; sourceTree = "<group>"; };
@@ -75,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1F33562281870600867BDD /* MobileCoreServices.framework in Frameworks */,
+				4C1F33552281870200867BDD /* SystemConfiguration.framework in Frameworks */,
+				4C1F334D228186E300867BDD /* CoreFoundation.framework in Frameworks */,
+				4C1F334E228186E300867BDD /* Foundation.framework in Frameworks */,
 				4C1F333B228179CD00867BDD /* libCPP_LIB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1992B41427E788FA9431B706F537D8FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +122,7 @@
 				990B6B3235F58200C7904D841C21FD64 /* OBJCWrapper.m */,
 				99B2E038C93C8F9046583D5B030380B2 /* Wrapper.h */,
 				B999826EFEC33D744451C285B6EBAA2F /* Wrapper.mm */,
+				4C1F33572281888F00867BDD /* SwiftWrapper.swift */,
 			);
 			name = Library;
 			path = AFtestLib/Classes/Library;
@@ -164,6 +179,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4C1F33412281864100867BDD /* Imports */ = {
+			isa = PBXGroup;
+			children = (
+				4C1F33422281864100867BDD /* Headers */,
+				4C1F33432281864100867BDD /* Binaries */,
+			);
+			name = Imports;
+			path = AFtestLib/Classes/Imports;
+			sourceTree = "<group>";
+		};
+		4C1F33422281864100867BDD /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		4C1F33432281864100867BDD /* Binaries */ = {
+			isa = PBXGroup;
+			children = (
+				4C1F33442281864100867BDD /* libQt5Core.la */,
+				4C1F33452281864100867BDD /* libQt5Core.a */,
+				4C1F33462281864100867BDD /* libQt5Core.prl */,
+			);
+			name = Binaries;
+			path = ../../AFtestLib/Classes/Imports/Binaries;
+			sourceTree = SOURCE_ROOT;
+		};
 		59948ADB175F7E4A1D176A4953D9B1AE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +218,10 @@
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				4C1F3354228186F900867BDD /* MobileCoreServices.framework */,
+				4C1F3353228186F900867BDD /* SystemConfiguration.framework */,
+				4C1F334C228186DB00867BDD /* CoreFoundation.framework */,
+				4C1F334B228186DB00867BDD /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -211,6 +257,7 @@
 		8B4C6E6CABA62649A667652D442052E5 /* AFtestLib */ = {
 			isa = PBXGroup;
 			children = (
+				4C1F33412281864100867BDD /* Imports */,
 				06EF608C9B7E5F615DB10F3746F5D9DA /* BLE */,
 				07D0217FDD7526A86F8091291B4CBCF9 /* Library */,
 				DFB167CBE8E1A5723A2F67BBE7D764F8 /* Networking */,
@@ -247,10 +294,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1FF9DC228175D500867BDD /* OBJCWrapper.h in Headers */,
+				92C0430CD25FF5BDEB1F27D7EA3C6B8E /* AFtestLib-umbrella.h in Headers */,
 				4C1FF9DE228175D500867BDD /* Wrapper.h in Headers */,
 				4C1FF9DA228175D500867BDD /* connect_sdk.h in Headers */,
-				92C0430CD25FF5BDEB1F27D7EA3C6B8E /* AFtestLib-umbrella.h in Headers */,
-				4C1FF9DC228175D500867BDD /* OBJCWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +390,7 @@
 				4543BF47568329DB11726BCE8F94F6EC /* AFtestLib-dummy.m in Sources */,
 				105F095DD97978011317ABF6C684AEC7 /* APIRequest.swift in Sources */,
 				697FDFCD3C879685F53F82B3D53301A3 /* BluetoothLowEnergy.swift in Sources */,
+				4C1F33582281888F00867BDD /* SwiftWrapper.swift in Sources */,
 				4C1FF9DF228175D500867BDD /* Wrapper.mm in Sources */,
 				FE08B0333B2ABAF4D17105BB015FF9BE /* NetworkRequest.swift in Sources */,
 				1606577E9BB5E1761DFAA708B198087D /* Sandbox.swift in Sources */,
@@ -424,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BD63A3BE23D6C1FBFC991906021BB10 /* AFtestLib.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -441,12 +490,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AFtestLib/AFtestLib.modulemap";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-L../../AFtestLib/Classes/Imports/Binaries",
+					"-lQt5Core",
+					"-lqtpcre2",
+					"-lz",
+				);
 				PRODUCT_MODULE_NAME = AFtestLib;
 				PRODUCT_NAME = AFtestLib;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BD63A3BE23D6C1FBFC991906021BB10 /* AFtestLib.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -476,12 +532,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AFtestLib/AFtestLib.modulemap";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-L../../AFtestLib/Classes/Imports/Binaries",
+					"-lQt5Core",
+					"-lqtpcre2",
+					"-lz",
+				);
 				PRODUCT_MODULE_NAME = AFtestLib;
 				PRODUCT_NAME = AFtestLib;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
