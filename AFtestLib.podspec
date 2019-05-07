@@ -29,7 +29,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'AFtestLib/Classes/**/*'
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L../../AFtestLib/Classes/Imports/Binaries -lQt5Core -lqtpcre2 -lz' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L../../AFtestLib/Classes/Imports/Binaries -lQt5Core -lqtpcre2 -lz',
+                            'HEADER_SEARCH_PATHS' => '../../AFtestLib/NIIP/'
+      
+  }
   
   
   # s.resource_bundles = {

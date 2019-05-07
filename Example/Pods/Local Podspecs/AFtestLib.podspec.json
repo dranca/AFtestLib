@@ -21,7 +21,8 @@
   },
   "source_files": "AFtestLib/Classes/**/*",
   "pod_target_xcconfig": {
-    "OTHER_LDFLAGS": "-L../../AFtestLib/Classes/Imports/Binaries -lQt5Core -lqtpcre2 -lz"
+    "OTHER_LDFLAGS": "-L../../AFtestLib/Classes/Imports/Binaries -lQt5Core -lqtpcre2 -lz",
+    "HEADER_SEARCH_PATHS": "../../AFtestLib/NIIP/"
   },
   "frameworks": [
     "MobileCoreServices",
