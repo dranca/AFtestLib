@@ -29,17 +29,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'AFtestLib/Classes/**/*'
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L../../AFtestLib/Classes/Imports/Binaries -lQt5Core -lqtpcre2 -lz',
-                            'HEADER_SEARCH_PATHS' => '../../AFtestLib/NIIP/'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L../../AFtestLib/NIIP/Libraries -lQt5Core -lqtpcre2 -lz',
+                            'HEADER_SEARCH_PATHS' => '../../AFtestLib/NIIP/Headers'
       
   }
   
-  
-  # s.resource_bundles = {
-  #   'AFtestLib' => ['AFtestLib/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation', 'Foundation'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  #s.library = 'CPP_LIB'
 end
