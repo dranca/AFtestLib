@@ -29,5 +29,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation', 'Foundation'
   s.vendored_libraries = ['../../AFtestLib/NIIP/Libraries/libCPP_LIB.a']
   s.library = 'CPP_LIB'
+  s.exclude_files = '../../AFtestLib/NIIP/**'
 
 end
