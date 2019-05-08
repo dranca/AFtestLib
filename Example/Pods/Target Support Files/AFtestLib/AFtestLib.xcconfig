@@ -1,7 +1,7 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/AFtestLib
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) ../../AFtestLib/Classes/Ignore/Headers
-OTHER_LDFLAGS = -L../../AFtestLib/Classes/Ignore/Libraries -l"CPP_LIB" -l"Qt5Core" -l"qtpcre2" -l"z" -framework "CoreFoundation" -framework "Foundation" -framework "MobileCoreServices" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Headers
+OTHER_LDFLAGS = -L$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Libraries -l"CPP_LIB" -l"Qt5Core" -l"qtpcre2" -l"z" -framework "CoreFoundation" -framework "Foundation" -framework "MobileCoreServices" -framework "SystemConfiguration"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

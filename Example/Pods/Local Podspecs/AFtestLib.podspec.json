@@ -21,8 +21,8 @@
   },
   "source_files": "AFtestLib/Classes/**/*",
   "pod_target_xcconfig": {
-    "OTHER_LDFLAGS": "-L../../AFtestLib/Classes/Ignore/Libraries -lQt5Core -lqtpcre2 -lz",
-    "HEADER_SEARCH_PATHS": "../../AFtestLib/Classes/Ignore/Headers"
+    "OTHER_LDFLAGS": "-L$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Libraries -lQt5Core -lqtpcre2 -lz",
+    "HEADER_SEARCH_PATHS": "$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Headers"
   },
   "frameworks": [
     "MobileCoreServices",

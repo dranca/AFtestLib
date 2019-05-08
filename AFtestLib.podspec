@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AFtestLib'
   s.version          = '1.2.0'
-  s.summary          = 'Small lib to test the capablity to perform a request, save to file and connect to bluetooth. It now displays the capability of importing a Qt library.'
+  s.summary          = 'Small lib to test the capablity to perform a request, save to file and connect to bluetooth.'
   
   s.description      = 'This Proof of Concept will include the functionality to connect and perfome a request to a server, save the result to the sandbox and connect through BLE'
 
@@ -20,15 +20,11 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
   s.ios.deployment_target = '11.0'
 
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Libraries -lCPP_LIB -lQt5Core -lqtpcre2 -lz',
+                      'HEADER_SEARCH_PATHS' => '$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Headers' }
+  
   s.source_files = 'AFtestLib/Classes/**/*'
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L../../AFtestLib/Classes/Ignore/Libraries -lQt5Core -lqtpcre2 -lz',
-                            'HEADER_SEARCH_PATHS' => '../../AFtestLib/Classes/Ignore/Headers'
-      
-  }
   
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation', 'Foundation'
-  s.library = 'CPP_LIB'
-  s.exclude_files = 'AFtestLib/Ignore/**'
   s.private_header_files = 'AFtestLib/Classes/Ignore/Headers/**/*'
-
 end
