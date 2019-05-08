@@ -1,7 +1,7 @@
 {
   "name": "AFtestLib",
   "version": "1.2.0",
-  "summary": "Small lib to test the capablity to perform a request, save to file and connect to bluetooth. It now displays the capability of importing a Qt library.",
+  "summary": "Small lib to test the capablity to perform a request, save to file and connect to bluetooth.",
   "description": "This Proof of Concept will include the functionality to connect and perfome a request to a server, save the result to the sandbox and connect through BLE",
   "homepage": "https://github.com/dranca/AFtestLib.git",
   "license": {
@@ -19,18 +19,16 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "AFtestLib/Classes/**/*",
   "pod_target_xcconfig": {
-    "OTHER_LDFLAGS": "-L$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Libraries -lQt5Core -lqtpcre2 -lz",
+    "OTHER_LDFLAGS": "-L$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Libraries -lCPP_LIB -lQt5Core -lqtpcre2 -lz",
     "HEADER_SEARCH_PATHS": "$(SRCROOT)/AFtestLib/AFtestLib/Classes/Ignore/Headers"
   },
+  "source_files": "AFtestLib/Classes/**/*",
   "frameworks": [
     "MobileCoreServices",
     "SystemConfiguration",
     "CoreFoundation",
     "Foundation"
   ],
-  "libraries": "CPP_LIB",
-  "exclude_files": "AFtestLib/Ignore/**",
   "private_header_files": "AFtestLib/Classes/Ignore/Headers/**/*"
 }
