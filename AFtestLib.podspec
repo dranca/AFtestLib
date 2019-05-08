@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'AFtestLib/Classes/**/*'
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L../../AFtestLib/Ignore/Libraries -lQt5Core -lqtpcre2 -lz',
-                            'HEADER_SEARCH_PATHS' => '../../AFtestLib/Ignore/Headers'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-L../../AFtestLib/Classes/Ignore/Libraries -lQt5Core -lqtpcre2 -lz',
+                            'HEADER_SEARCH_PATHS' => '../../AFtestLib/Classes/Ignore/Headers'
       
   }
   
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation', 'Foundation'
   s.library = 'CPP_LIB'
   #s.exclude_files = 'AFtestLib/Ignore/**'
-  s.private_header_files = 'AFtestLib/Ignore/Headers/**'
+  s.private_header_files = 'AFtestLib/Classes/Ignore/Headers/**/*'
 
 end
