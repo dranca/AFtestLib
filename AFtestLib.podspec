@@ -27,4 +27,7 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation', 'Foundation'
   s.private_header_files = 'AFtestLib/Classes/Ignore/Headers/**/*'
+  
+  # DO NOT remove this script. It prevents renaming of libCPP_LIB.a to libCPP_LIB breaking the project.
+  s.script_phase = { :name => 'Prevent Rename', :script => 'puts "Prevent Rename"', :shell_path => '/usr/bin/ruby' }
 end
