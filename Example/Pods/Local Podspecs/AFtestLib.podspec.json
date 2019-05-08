@@ -31,6 +31,6 @@
     "Foundation"
   ],
   "libraries": "CPP_LIB",
-  "exclude_files": "../../AFtestLib/Ignore/**",
-  "private_header_files": "../../AFtestLib/Ignore/Headers"
+  "exclude_files": "AFtestLib/Ignore/**",
+  "private_header_files": "AFtestLib/Ignore/Headers/**"
 }
